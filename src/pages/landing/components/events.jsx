@@ -1,8 +1,9 @@
 import React from 'react'
+import Categories from './categories'
 
 const Events = () => {
   return (
-    <div>Events</div>
+    <Categories/>
   )
 }
 

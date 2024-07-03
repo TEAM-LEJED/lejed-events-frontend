@@ -1,6 +1,5 @@
 import RootLayout from "./layouts/rootLayout"
 import LandingPage from "./pages/landing"
-
 import "./App.css"
 import { RouterProvider, createBrowserRouter } from "react-router-dom"
 import CreateEvents from "./pages/createEvents"
@@ -21,8 +20,10 @@ function App() {
                     element:<CreateEvents/>
 
                 },
+               
+               
                 {
-                    path: "eventsDetails",
+                    path: "eventDetails",
                     element:<EventDetails/>
 
                 },

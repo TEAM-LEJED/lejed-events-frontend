@@ -1,11 +1,11 @@
 import Categories from "./components/categories";
 import Events from "./components/events";
+import Hero from "./components/hero";
 import Subscription from "./components/subscription";
-import TopBar from "./components/topBar";
 
 const LandingPage = () => {
     return <div>
-        <TopBar/>
+        <Hero/>
         <Categories/>
         <Events/>
         <Subscription/>
