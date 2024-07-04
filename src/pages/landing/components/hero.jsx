@@ -20,14 +20,14 @@ const Hero = () => {
             <label htmlFor="search" className="sr-only">Search</label>
             <div className="flex items-center">
               <span className="absolute inset-y-0 left-4 flex items-center">
-                <Search className="text-gray-500 h-6 w-6" />
+                <Search className="text-black h-6 w-6" />
               </span>
               <input
                 id="search"
                 placeholder="Search for an event"
                 type="text"
                 name="search"
-                className="pl-10 pr-4 border rounded-lg border-gray-300 focus:outline-none focus:border-pink-500 h-12 w-80"
+                className="pl-10 pr-4 border rounded-lg text-black border-gray-300 focus:outline-none focus:border-pink-500 h-12 w-80"
               />
                <div className="ml-4 ">
             <DateRange />

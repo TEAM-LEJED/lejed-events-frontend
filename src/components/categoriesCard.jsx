@@ -5,10 +5,10 @@ import NavLinks from './navLinks';
 
  
 
-const CategoriesCard = ({ img, eventName, location, date, price }) => {
+const CategoriesCard = ({ img, eventName, location, date, price, onClick }) => {
   return (
 
-    <div className="relative rounded-[10px] shadow-2xl  overflow-hidden">
+    <div className="relative rounded-[10px] shadow-2xl  overflow-hidden" onClick={onClick}>
       <div className="absolute top-2 right-2 bg-white-500 rounded-[7px] flex justify-center items-center">
         <Star className="text-white h-5 w-5" />
       </div>
