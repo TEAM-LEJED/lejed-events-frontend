@@ -4,6 +4,7 @@ import "./App.css"
 import { RouterProvider, createBrowserRouter } from "react-router-dom"
 import CreateEvents from "./pages/createEvents"
 import EventDetails from "./pages/eventDetails"
+
 function App() {
     const router = createBrowserRouter([
         {
