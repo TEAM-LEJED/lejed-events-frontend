@@ -14,6 +14,7 @@ const k = {
             name:"EventDetails",
             path: "/eventDetails",
         },
+      
        
 
     ],

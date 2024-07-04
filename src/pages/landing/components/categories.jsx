@@ -1,7 +1,5 @@
 import React from 'react'
 import CategoriesCard from '../../../components/categoriesCard'
-import eventFlyerImage from '../../../assets/images/eventImg.jpg'
-import NavLinks from '../../../components/navLinks'
 import { useNavigate } from 'react-router-dom'
 import k from '../../../constants'
 const Categories = () => {

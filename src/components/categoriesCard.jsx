@@ -1,7 +1,5 @@
 import { Star } from 'lucide-react';
 import React from 'react';
-import NavLinks from './navLinks';
-
 
  
 
