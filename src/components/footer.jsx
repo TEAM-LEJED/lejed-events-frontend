@@ -1,6 +1,8 @@
+import { fbIcon, instagramIcon, linkedinIcon, logoImg, twitterIcon, whatsappIcon, youtubeIcon } from "../assets"
+
 const Footer = () => {
   return (
-    <div className="bg- bg-yellow-300 w-screen h-85">
+    <div className="bg- bg-yellow-300 w-screen h-86">
       <div className="flex gap-x-10 place-content-center py-20">
         <div>
           <h3 className="font-bold text-[20px] mb-3">Host Events</h3>
@@ -31,11 +33,16 @@ const Footer = () => {
           <button className="bg-white h-8 ">Subscribe</button>
         </div>
 
-
-
       </div>
-      <span>
-        icons
+      <span className="flex gap-x-10 place-content-center py-10">
+        <img className="size-[38px]" src={logoImg} alt="" />
+      <img className="size-[23px]" src={fbIcon} alt="" />
+      <img className="size-[20px]" src={twitterIcon} alt="" />
+      <img className="size-[25px]" src={whatsappIcon} alt="" />
+      <img className="size-[25px]" src={youtubeIcon} alt="" />
+      <img className="size-[25px]"  src={linkedinIcon} alt="" />
+      <img className="size-[25px]" src={instagramIcon} alt="" />
+      
       </span>
 
     </div>
