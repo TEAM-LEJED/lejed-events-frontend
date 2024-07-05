@@ -6,9 +6,9 @@ const GridEventDetails = ({ eventDetails }) => {
 
   return (
     <div className="grid grid-rows-5 grid-flow-col justify-center h-screen gap-8">
-      <div className="row-span-2 w-[60rem] bg-gray-200">
+      <div className="row-span-2 w-[60rem]">
         {/* Displaying image */}
-        <img src={`https://savefiles.org/${eventDetails.flier}?shareable_link=250`} alt="flyerImage" className='size-72'/>
+        <img src={`https://savefiles.org/${eventDetails.flier}?shareable_link=250`} alt="flyerImage" className='size-96 h-80 w-96'/>
       </div>
       {/* <div className="row-span-2 w-[60rem] bg-orange-200">
         <EvenDescription/>
