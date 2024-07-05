@@ -22,9 +22,7 @@ function App() {
                     path: "createEvents",
                     element:<CreateEvents/>
 
-                },
-               
-               
+                },  
                 {
                     path: "event-details/:id",
                     element:<EventDetails/>

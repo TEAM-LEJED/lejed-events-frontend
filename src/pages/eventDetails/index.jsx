@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
-import axios from 'axios';
 import GridEventDetails from '../../components/gridEventDetails'
 
 
 const EventDetails = () => {
   const location = useLocation();
   const eventDetails = location.state;
+  console.log(eventDetails)
 
   if (!eventDetails) {
     return <div>Loading...</div>; // eventDetails is not available yet
@@ -27,7 +27,7 @@ const EventDetails = () => {
         <button className='rounded-[12px] outline-double w-20 h-8 justify-center bg-[#F5A3CC] hover:bg-white'>Get Ticket</button>
       </div>
       <div>
-        <GridEventDetails events={[eventDetails]} />
+        <GridEventDetails eventDetails={eventDetails} />
       </div>
     </>
   );

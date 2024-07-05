@@ -3,12 +3,11 @@ import React from 'react';
 
 
 
-const CategoriesCard = ({ img, eventName, location, date, price, description, onClick }) => {
+const CategoriesCard = ({ img, eventName, location, date, price,  onClick, key }) => {
 
 
   return (
-
-    <div className="relative rounded-[10px] shadow-lg  overflow-hidden" onClick={onClick}>
+    <div className="relative rounded-[10px] shadow-lg  overflow-hidden cursor-pointer" onClick={onClick} key={key}>
       <div className="absolute top-2 right-2 bg-white-500 rounded-[7px] flex justify-center items-center">
         <Star className="text-white h-5 w-5" />
       </div>
