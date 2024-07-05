@@ -1,8 +1,21 @@
 import React, { useState } from 'react';
+import axios from 'axios';
+import EventsCategories from '../../components/eventsCategories';
 
 const CreateEvent = () => {
+    //Post Event to backend 
+    const postEvent = async (event) => {
+        event.preventDefault();
+        //Collect all inputs from form
+        const formData = new FormData(event.target);
+        //post data to backend
+        const response = await axios.post('https://lejed-events-backend-4.onrender.com/events', formData);
+        console.log(response);
+
+    }
     const [formData, setFormData] = useState({
         name: '',
+        // category '',
         date: '',
         time: '',
         price: '',
@@ -24,6 +37,7 @@ const CreateEvent = () => {
         // Reset form after submission
         setFormData({
             name: '',
+            // category '',
             date: '',
             time: '',
             price: '',
@@ -36,7 +50,7 @@ const CreateEvent = () => {
     return (
         <div className="max-w-4xl mx-auto mt-10 p-6  bg-[#E5CFDA] rounded-lg shadow-xl">
             <h2 className="text-2xl text-center font-bold mb-6">Create Event</h2>
-            <form onSubmit={handleSubmit} className="space-y-4">
+            <form onSubmit={postEvent} className="space-y-4">
                 <div>
                     <label htmlFor="name" className="block text-sm  font-medium text-gray-700">Event Name</label>
                     <input
@@ -48,6 +62,24 @@ const CreateEvent = () => {
                         required
                         className="mt-1 block w-full h-10 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                     />
+                </div>
+                <div   className="mt-1 block w-full h-10 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                <label htmlFor="name" className="block text-sm  font-medium text-gray-700">Category</label>
+
+                    <EventsCategories/>
+                    
+                    {/* <label htmlFor="categoryid" className="block text-sm font-medium text-gray-700">
+                        Category
+                    </label>
+                    <input
+                        type="text"
+                        id="categoryid"
+                        name="category"
+                        value={formData.category}
+                        onChange={handleChange}
+                        required
+                        className="mt-1 block w-full h-10 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                    /> */}
                 </div>
 
                 <div>

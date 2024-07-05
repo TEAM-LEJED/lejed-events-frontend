@@ -9,7 +9,7 @@ const Categories = () => {
 
   //Define a function to fetch events
   const getEvents = async () => {
-    const response = await axios.get('https://lejed-events-backend-2.onrender.com/events')
+    const response = await axios.get('https://lejed-events-backend-4.onrender.com/events')
     if (response.status === 200) {
       setEvents(response.data);
 
@@ -24,8 +24,7 @@ const Categories = () => {
   },[]);
 
   return (
-    <div className="flex flex-row justify-center bg-[#E5CFDA]
-     py-[50px]">
+    <div className="flex flex-row justify-center bg-[#E5CFDA] py-[50px]">
       <div className="grid grid-cols-3 gap-4">
 
         {

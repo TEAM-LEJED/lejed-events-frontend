@@ -21,8 +21,8 @@ const CategoriesCard = ({ img, eventName, location, date, price, description, on
             <p className="text-sm">{location}</p>
           </div>
           <div className="flex justify-between px-4">
-          <p className="text-sm">{date}</p>
-          <p className="text-sm">{price}</p>
+          <p className="text-sm">{new Date(date).toLocaleDateString()}</p>
+          <p className="text-sm font-bold">{ price == 0 ? "Free" : `GHS ${price}`}</p>
           {/* <h3 className="text-sm">{description}</h3> */}
 
 
