@@ -21,9 +21,9 @@ const Events = () => {
       getEvents();
     },[]);
   return (
-<div className="flex flex-row justify-center bg-[#9A9C95]
+<div className="flex flex-row justify-center 
      py-[50px]">
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid grid-cols-3 gap-10">
 
         {
           events.map((event, index) => {

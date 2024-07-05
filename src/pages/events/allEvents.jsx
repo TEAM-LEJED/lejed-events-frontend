@@ -65,7 +65,7 @@ const Events = () => {
   return (
     <div>
       {/* Search inputs */}
-      <div className="flex justify-center bg-[#E5CFDA] space-x-4 pt-10">
+      <div className="flex justify-center  space-x-4 pt-10">
         <input
           type="text"
           placeholder="Search by name"
@@ -93,7 +93,7 @@ className="rounded-full border border-gray-300 px-4 py-2 focus:outline-none focu
       </div>
 
       {/* Display filtered events */}
-      <div className="flex flex-row justify-center bg-[#E5CFDA] py-[50px]">
+      <div className="flex flex-row justify-center  py-[50px]">
         <div className="grid grid-cols-3 gap-4">
           {filteredEvents.map((event, index) => (
             <CategoriesCard

@@ -28,13 +28,13 @@ const Footer = () => {
 
         <div className="flex flex-col">
           <h3 className="font-bold mb-3 text-[20px]">Subscription</h3>
-          <input type="text" className="mb-3" placeholder="Name" />
-          <input type="text" className="mb-3" placeholder="Email" />
-          <button className="bg-white h-8 ">Subscribe</button>
+          <input type="text" className="mb-3 rounded p-2" placeholder="Name" />
+          <input type="text" className="mb-3 rounded p-2" placeholder="Email" />
+          <button className="bg-black text-white h-8 rounded ">Subscribe</button>
         </div>
 
       </div>
-      <span className="flex gap-x-10 place-content-center py-10">
+      <span className="flex gap-x-10 items-center justify-center py-10">
         <img className="size-[38px]" src={logoImg} alt="" />
       <img className="size-[23px]" src={fbIcon} alt="" />
       <img className="size-[20px]" src={twitterIcon} alt="" />

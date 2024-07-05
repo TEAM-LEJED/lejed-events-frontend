@@ -6,7 +6,7 @@ import DateRange from "./dateRange";
 
 const Navbar = () => {
   return (
-    <div className="sticky top-0 z-10 bg-[#EC4899] bg-opacity-50 flex justify-between items-center px-12">
+    <div className="sticky top-0 z-10 bg-[#EC4899] bg-opacity-50 flex justify-between items-center px-12 w-screen">
       <div className="ml-4 flex items-center"> 
         <img src={logoImg} alt="logo" className="w-20 h-20" />
         <EventsCategories />
