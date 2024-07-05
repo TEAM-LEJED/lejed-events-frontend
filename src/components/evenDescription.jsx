@@ -1,12 +1,14 @@
 import React from 'react'
+import EventDetails from '../pages/eventDetails'
 
 const EvenDescription = () => {
   return (
 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
 
+<h5>{EventDetails.description}</h5>
 
   {/* Description section */}
-  <div className="col-span-1 md:col-span-1 bg-white p-4">
+  {/* <div className="col-span-1 md:col-span-1 bg-white p-4">
     <h2 className="text-xl font-bold">Join us for an unforgettable Night of Worship & Honor</h2>
     <p className="text-gray-700 mb-4">
       Hosted by Wendy Fory, this evening promises to be a soul-stirring experience, featuring guest ministers Chris Ametepe, Jacquline Oforiwaa-Amanfo, Minister Success, Nii Praiz, Jonas Botchwey, and many more. With performances by the Genesis Choir and other talented artists, this event will uplift and inspire your spirit.
@@ -20,7 +22,7 @@ const EvenDescription = () => {
 
     <p className="text-green-600 font-bold">It's FREE!! Reserve a seat NOW !!!</p>
     <p><strong>RSVP:</strong> 0242666795 / 0504135454 / 0247967952</p>
-  </div>
+  </div> */}
 </div>
   )
 }

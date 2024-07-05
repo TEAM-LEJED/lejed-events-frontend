@@ -4,6 +4,8 @@ import "./App.css"
 import { RouterProvider, createBrowserRouter } from "react-router-dom"
 import CreateEvents from "./pages/createEvents"
 import EventDetails from "./pages/eventDetails"
+import AllEvents from "./pages/events/allEvents"
+import Events from "./pages/events/allEvents"
 
 function App() {
     const router = createBrowserRouter([
@@ -28,6 +30,17 @@ function App() {
                     element:<EventDetails/>
 
                 },
+                {
+                    path: "allEvents",
+                    element:<AllEvents/>
+
+                },
+                {
+                    path: "allEvents",
+                    element:<Events/>
+
+                },
+              
                
                 
             ]

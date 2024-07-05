@@ -7,8 +7,8 @@ const EventHost = () => {
       <div className="flex items-center mb-4">
         <img src={hostImage} alt="Host" className="w-12 h-12 rounded-full mr-3" />
         <div>
-          <h2 className="text-xl font-semibold">Hosted By John Doe</h2>
-          <p className="text-gray-600">EVent Host is very good <br /> with what he does</p>
+          <h2 className="text-xl font-semibold">Hosted By Beth Lee</h2>
+          <p className="text-gray-600">Event Host is very good <br /> with what he does</p>
         </div>
       </div>
       <div className="flex justify-between">

@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div className="bg- bg-yellow-300 w-screen h-85">
+    <div className="bg- bg-[#E88BBA] w-screen h-85">
       <div className="flex gap-x-10 place-content-center py-20">
         <div>
           <h3 className="font-bold text-[20px] mb-3">Host Events</h3>
